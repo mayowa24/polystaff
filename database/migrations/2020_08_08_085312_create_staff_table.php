@@ -20,8 +20,8 @@ class CreateStaffTable extends Migration
             $table->string('staff_name');
             $table->string('department');
             $table->string('phone_no');
-            $table->string('passport');
-            $table->string('signature');
+            $table->string('passport')->nullable();
+            $table->string('signature')->nullable();
             $table->timestamps();
         });
     }
